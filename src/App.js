@@ -1,7 +1,6 @@
 import React from 'react';
 import foto from './profile.jpg';
 import vue from './vue.png';
-import angular from './AngularJS.svg'
 import logoreact from './logo192.png'
 import './App.css';
 import { Button, Card, CardColumns, ProgressBar } from 'react-bootstrap'
