@@ -12,13 +12,14 @@ library.add(fab)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App" style={{backgroundColor:'grey'}}>
+      {/* <header className="App-header"> */}
+      <CardColumns style={{paddingLeft:'40%'}}>
       <Card bg="dark" style={{ width: '18rem' }}>
         <Card.Img variant="top" src={foto} />
-        <Card.Header style={{color:'black'}}>Profile</Card.Header>
+        <Card.Header style={{color:'white'}}>Profile</Card.Header>
         <Card.Body>
-          <Card.Text style={{color:'black'}}>
+          <Card.Text style={{color:'white'}}>
             Faisal Aprianto
             00000042520
             Informatika - 2019
@@ -33,28 +34,29 @@ function App() {
           }}><FontAwesomeIcon icon={['fab','instagram']}/></Button>
         </Card.Body>
         </Card>
+        </CardColumns>
         <h2>Experience</h2>
-        <div className="card mb-3" style={{width:'500px'}}>
+        <div className="card mb-3" style={{width:'500px', marginLeft:'37%'}}>
         </div>
         <CardColumns>
           <Card bg="dark" style={{width:'18rem',marginLeft:'30px'}}>
             <Card.Img variant="bottom" src={vue}/>
-            <Card.Header>VueJS</Card.Header>
+            <Card.Header style={{color:'white'}}>VueJS</Card.Header>
             <Card.Body>
-              <Card.Text>Progress</Card.Text>
+              <Card.Text style={{color:'white'}}>Progress</Card.Text>
               <ProgressBar animated now={20}/>
             </Card.Body>
           </Card>
           <Card bg="dark" style={{width:'18rem',marginLeft:'20px'}}>
             <Card.Img variant="bottom" src={logoreact}/>
-            <Card.Header>ReactJS</Card.Header>
+            <Card.Header style={{color:'white'}}>ReactJS</Card.Header>
             <Card.Body>
-              <Card.Text>Progress</Card.Text>
+              <Card.Text style={{color:'white'}}>Progress</Card.Text>
               <ProgressBar animated now={15}/>
             </Card.Body>
           </Card>
         </CardColumns>
-      </header>
+      {/* </header> */}
     </div>
   );
 }
