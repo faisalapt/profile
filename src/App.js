@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './profile.jpg';
 import './App.css';
 import { Button, Card } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
